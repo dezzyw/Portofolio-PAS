@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Cake's</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="img/1 (1).png" type="image/x-icon">
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="img/CAKEKUE.png" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a  href="beranda.html">Home</a></li>
+                <li><a class="active" href="belanja.html">Belanja</a></li>
+                <a href="index.html" id="logout"><i class="fa-solid fa-right-from-bracket"></i></a>
+                <a href="#" id="close"><i class="fa-solid fa-xmark"></i></a>
+            </ul>
+        </div>
+
+        <div id="mobile">
+            <i id="bar" class="fa-solid fa-bars"></i>
+            
+            
+        </div>
+    </section>
+
+    <div class="yuk">
+        <h2>Yuk pilih roti ulang tahun untuk hari spesialmu!</h2>
+    </div>
+
+    <div class="cart">
+        <h2>Pembayaran</h2>
+        <div id="cart-items">
+            <!--cart items will be displayed here-->
+        </div>
+        <div class="total">Total: $<span id="total-price"></span></div>
+        <br>
+        <button id="btn-bayar">Bayar</button>
+    </div>
+
+    <section id="product1" class="section-p1">
+        <h2>Our Product</h2>
+        <div class="pro-container">
+
+            <div class="card" onclick="addToCart(this)">
+                <img src="img/product/roti 1.png" alt="">
+                <h5>Pink Flash</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$178</h4>
+            </div>
+
+            <div class="card" onclick="addToCart(this)">
+                <img src="img/product/roti 2.png" alt="">
+                <h5>Lovers</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$98</h4>
+            </div>
+
+            <div class="card" onclick="addToCart(this)">
+                <img src="img/product/roti 3.png" alt="">
+                <h5>Rings Pinky</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$90</h4>
+            </div>
+
+            <div class="card" onclick="addToCart(this)">
+                <img src="img/product/roti 4.png" alt="">
+                <h5>The Bear</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$77</h4>
+            </div>
+
+            <div class="card" onclick="addToCart(this)">
+                <img src="img/product/roti 5.png" alt="">
+                <h5>Roservie</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$68</h4>
+            </div>
+
+            <div class="card" onclick="addToCart(this)">
+                <img src="img/product/roti 6.png" alt="">
+                <h5>Cerylice</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$48</h4>
+            </div>
+
+            <div class="card" onclick="addToCart(this)">
+                <img src="img/product/roti 7.png" alt="">
+                <h5>StrawberryDance</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$50</h4>
+            </div>
+
+            <div class="card" onclick="addToCart(this)">
+                <img src="img/product/roti 8.png" alt="">
+                <h5>BleachPeach</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$66</h4>
+            </div>
+
+            
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>New Product</h2>
+        <div class="pro-container">
+            <div class="card" onclick="addToCart(this)">
+                <img src="img/newproduct/1.png" alt="">
+                <h5>Pink Dance</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$100</h4>
+            </div>
+
+            <div class="card" onclick="addToCart(this)">
+                <img src="img/newproduct/2.png" alt="">
+                <h5>Ribbon's</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$99</h4>
+            </div>
+
+            <div class="card" onclick="addToCart(this)">
+                <img src="img/newproduct/3.png" alt="">
+                <h5>Ribbon Party</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$108</h4>
+            </div>
+
+            <div class="card" onclick="addToCart(this)">
+                <img src="img/newproduct/4.png" alt="">
+                <h5>Super Flash</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$111</h4>
+            </div>
+
+            <div class="card" onclick="addToCart(this)">
+                <img src="img/newproduct/5.png" alt="">
+                <h5>Buttersweet</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$121</h4>
+            </div>
+
+            <div class="card" onclick="addToCart(this)">
+                <img src="img/newproduct/6.png" alt="">
+                <h5>Butterfly's</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$97</h4>
+            </div>
+
+            <div class="card" onclick="addToCart(this)">
+                <img src="img/newproduct/7.png" alt="">
+                <h5>Berrystar</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$99</h4>
+            </div>
+
+            <div class="card" onclick="addToCart(this)">
+                <img src="img/newproduct/8.png" alt="">
+                <h5>RedSpinks</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$89</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <h2>Blue Edition</h2>
+        <div class="pro-container">
+            <div class="card" onclick="addToCart(this)">
+                <img src="img/biru/1.png" alt="">
+                <h5>Blue Sky</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$80</h4>
+            </div>
+
+            <div class="card" onclick="addToCart(this)">
+                <img src="img/biru/2.png" alt="">
+                <h5>Bare Blue's</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$90</h4>
+            </div>
+
+            <div class="card" onclick="addToCart(this)">
+                <img src="img/biru/3.png" alt="">
+                <h5>Party Sky</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$98</h4>
+            </div>
+
+            <div class="card" onclick="addToCart(this)">
+                <img src="img/biru/4.png" alt="">
+                <h5>Super Power</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$81</h4>
+            </div>
+
+            <div class="card" onclick="addToCart(this)">
+                <img src="img/biru/5.png" alt="">
+                <h5>Buttersweet Blue</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$92</h4>
+            </div>
+
+            <div class="card" onclick="addToCart(this)">
+                <img src="img/biru/6.png" alt="">
+                <h5>Babby Blue</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$87</h4>
+            </div>
+
+            <div class="card" onclick="addToCart(this)">
+                <img src="img/biru/7.png" alt="">
+                <h5>StarBe</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$79</h4>
+            </div>
+
+            <div class="card" onclick="addToCart(this)">
+                <img src="img/biru/8.png" alt="">
+                <h5>BlueSpace</h5>
+                <div class="star">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+                <h4>$88</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="banner" class="section-m1">
+        <h4>Hello, sparklepants!</h4>
+        <h2>Thank You <span>for</span> Visiting</h2>
+    </section>
+
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="img/logo.png" alt="">
+            <h4>Contcat</h4>
+            <p><strong>Address:</strong> Jln Bareng, Zona Nyaman, Kec.Masa Lalu, Kab.Banyumas</p>
+            <p><strong>Phone:</strong> +62 987325638468</p>
+            <p><strong>Hours:</strong>11.00 - 19.00. Mon-Sat</p>
+
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-pinterest-p"></i>
+                    <i class="fa-brands fa-youtube"></i>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <br>
+            <a href="#">About</a>
+            <a href="#">Shop</a>
+            <a href="#">Product</a>
+            <a href="#">Contact us</a>
+            <a href="#">Privacy Policy</a>
+        </div>
+
+        <div class="col">
+            <h4>My Account</h4>
+            <br>
+            <a href="#">Sign in</a>
+            <a href="#">View Cart</a>
+            <a href="#">My Wishlist</a>
+            <a href="#">Track My Order</a>
+            <a href="#">Help </a>
+        </div>
+
+        <div class="col install">
+            <h4>Instal App</h4>
+            <p>From App Store or Google Play Store</p>
+            <div class="row">
+                <img src="img/pay/app.jpg" alt="">
+                <img src="img/pay/play.jpg" alt="">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="img/pay/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p>Copyright &copy; 2023 by Desi Maulani | All Rights Reserved</p>
+        </div>
+    </footer>
+
+
+
+
+
+
+    <script src="https://kit.fontawesome.com/d7cba4f612.js" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>

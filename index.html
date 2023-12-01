@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Cake's</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/1 (1).png" type="image/x-icon">
+</head>
+<body style="@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700&display=swap'); font-family: 'League Spartan'; background-color: #FFEDED;">
+    
+    <div class="container" style="width: 400px;
+    height: 400px;
+    padding: 30px;
+    box-sizing: border-box;
+    background-color: white;
+    margin: 0 auto;
+    margin-top: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+
+        <h1 style="text-align: center; color: #be5252; font-family: 'League Spartan';" >LOG IN</h1>
+
+        <form id="login-form">
+
+            <label for="email" style="display: block;
+            margin-top: 10px;">Username:</label>
+
+            <input type="text" id="email" name="email" required style=" width: 100%;
+            padding: 6px 12px;
+            margin: 5px 0;
+            box-sizing: border-box;">
+
+            <label for="password" style="display: block;
+            margin-top: 10px;">Password:</label>
+
+            <input type="password" id="password" name="password" required style="width: 100%;
+            padding: 6px 12px;
+            margin: 5px 0;
+            box-sizing: border-box;">
+
+            <input type="submit" value="Login" style="background-color: #be5252;
+            color: white;
+            padding: 10px 20px;
+            margin-top: 10px;
+            border: none;
+            cursor: pointer;
+            width: 50%;
+            text-align: center;
+            align-items: center;">
+        </form>
+        
+    </div>
+
+    <script>
+        
+        document.getElementById('login-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            let email = document.getElementById('email').value;
+            let password = document.getElementById('password').value;
+
+            // Pertimbangkan penyimpanan data login pada server
+            if (email === 'user' && password === 'user') {
+                window.location.href = 'beranda.html';
+            } else {
+                alert('Email atau password salah.');
+            }
+        });
+    </script>
+    
+</body>
+</html>
